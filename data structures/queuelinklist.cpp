@@ -22,6 +22,7 @@ class QUEUE{
   void display();
   void peek();
   void deque();
+  void reverse();
 
 };
 
@@ -60,6 +61,20 @@ void QUEUE :: deque(){
     front=front->next;
     free(ptr);
     return ;
+}
+
+void QUEUE:: reverse(){
+  node *temp = front; 
+  node *prev=NULL, *next=NULL;
+  while(temp){
+      next = temp->next;
+      temp->next = prev;
+      prev = temp;
+      temp = next;
+  }
+  
+  front=prev;
+  return;
 }
 
 

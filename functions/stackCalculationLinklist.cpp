@@ -147,32 +147,5 @@ void STACK:: diff(node *h1, node *h2){
 }
 
 int main(){ 
-  int t;
-  cin>>t;
-  for(int i=0;i<t;i++){
-    int a,b,var;
-    cin>>a>>b;
-    
-    class STACK A,B;
-    for(int i=0;i<a+1;i++){
-      cin>>var;
-      A.push(var);
-    }
-    for(int i=0;i<b+1;i++){
-      cin>>var;
-      B.push(var);
-    }
-    
-    int x;
-    cin>>x;
-    cout<<A.calc(x)<<"\n";
-    cout<<B.calc(x)<<"\n";
-
-    class STACK C,D;
-    C.add(A.top,B.top);
-    D.diff(C.top,A.top);
-    
-    cout<<C.calc(x)<<"\n";
-    cout<<D.calc(x)<<"\n";
-  }
+  return 0;
 }
